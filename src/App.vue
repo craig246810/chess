@@ -10,6 +10,7 @@
       <nav class="mdl-navigation">
         <router-link class="mdl-navigation__link" to="/" @click.native="hideMenu">Home</router-link>
         <router-link class="mdl-navigation__link" to="/upcoming-events" @click.native="hideMenu">Upcoming Events</router-link>
+        <router-link class="mdl-navigation__link" to="/league-table/" @click.native="hideMenu">League Table</router-link>
       </nav>
     </div>
     <main class="mdl-layout__content">
