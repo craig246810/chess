@@ -15,7 +15,8 @@
   export default {
     methods: {
       getTable: function () {
-        this.$http.get('https://www.ulsterchess.org/competitions/competitions/comp-3025/cvt_event/standings/376').then(response => {
+//        this.$http.get('https://www.ulsterchess.org/competitions/competitions/comp-3025/cvt_event/standings/376').then(response => {
+        this.$http.get('https://yesno.wtf/api').then(response => {
           console.log(response)
           debugger
           this.catUrl = parse(response.body).root.children['0'].children['0'].children['0'].children['0'].content
