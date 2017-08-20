@@ -5,6 +5,7 @@ import HomeView from '@/components/HomeView'
 import LeagueTableView from '@/components/LeagueTableView'
 import MyGamesView from '@/components/MyGamesView'
 import ImproveView from '@/components/ImproveView'
+import RegisterView from '@/components/RegisterView'
 
 Vue.use(Router)
 
@@ -26,14 +27,19 @@ export default new Router({
       component: ImproveView
     },
     {
-      path: '/upcoming-events/',
+      path: '/upcoming-events',
       name: 'upcomingEvents',
       component: UpcomingEventsView
     },
     {
-      path: '/league-table/',
+      path: '/league-table',
       name: 'leagueTable',
       component: LeagueTableView
+    },
+    {
+      path: '/register',
+      name: 'register',
+      component: RegisterView
     }
   ]
 })

@@ -13,6 +13,7 @@
         <router-link class="mdl-navigation__link" to="/improve/" @click.native="hideMenu">Improve</router-link>
         <router-link class="mdl-navigation__link" to="/upcoming-events/" @click.native="hideMenu">Upcoming Events</router-link>
         <router-link class="mdl-navigation__link" to="/league-table/" @click.native="hideMenu">League Table</router-link>
+        <router-link class="mdl-navigation__link" to="/register/" @click.native="hideMenu">Register</router-link>
       </nav>
     </div>
     <main class="mdl-layout__content">
