@@ -1,9 +1,19 @@
 <template>
-  <h2>Improve</h2>
+  <div>
+    <h2>Improve</h2>
+    <br>
+    {{msg}}
+  </div>
+
 </template>
 
 <script>
-  export default {
+  module.exports = {
+    data: function () {
+      return {
+        msg: 'Hello World'
+      }
+    }
   }
 </script>
 

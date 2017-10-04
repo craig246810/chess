@@ -6,11 +6,21 @@ import router from './router'
 import Vuefire from 'vuefire'
 import firebase from './services/firebase'
 import VueResource from 'vue-resource'
+import cheerio from 'cheerio'
+import Axios from 'axios'
+import Vuex from 'vuex'
 
 Vue.use(Vuefire)
 Vue.use(VueResource)
+Vue.use(cheerio)
+Vue.use(Axios)
+Vue.use(Vuex)
 
 Vue.config.productionTip = false
+
+Vue.component('other', require('./components/Other.vue'))
+
+import store from './store'
 
 /* eslint-disable no-new */
 new Vue({
@@ -19,6 +29,7 @@ new Vue({
     chess: firebase.database.ref('chess').orderByChild('created_at')
   },
   router,
+  store: new Vuex.Store(store),
   template: '<App/>',
   components: {App}
 })

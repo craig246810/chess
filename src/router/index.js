@@ -6,6 +6,7 @@ import LeagueTableView from '@/components/LeagueTableView'
 import MyGamesView from '@/components/MyGamesView'
 import ImproveView from '@/components/ImproveView'
 import RegisterView from '@/components/RegisterView'
+import ToDoView from '@/components/TodoView.vue'
 
 Vue.use(Router)
 
@@ -40,6 +41,11 @@ export default new Router({
       path: '/register',
       name: 'register',
       component: RegisterView
+    },
+    {
+      path: '/todo',
+      name: 'todo',
+      component: ToDoView
     }
   ]
 })
